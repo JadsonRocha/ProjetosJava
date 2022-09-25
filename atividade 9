@@ -1,0 +1,36 @@
+
+package javaprimeiroprojeto;
+
+import java.util.Scanner;
+
+
+public class atividade13 {
+    public void atividade13 (){
+    Scanner imput = new Scanner(System.in);
+    
+    int n1,idade;
+    System.out.println("quantas pesquisas deseja fazer? ");
+     n1=imput.nextInt();
+    
+    for(int i=0;i<n1;i++){
+    System.out.println("digite a idade da pesssoa: ");
+    idade=imput.nextInt();
+    if(idade<=18){
+        System.out.println("o valor a ser pago é de 275R$");
+    }else if(idade<=29){
+         System.out.println("o valor a ser pago é de 310R$");
+    }else if(idade<=35){
+         System.out.println("o valor a ser pago é de 390R$");
+    }else if(idade<=45){
+         System.out.println("o valor a ser pago é de 780R$");
+    }else if(idade<=55){
+         System.out.println("o valor a ser pago é de 1260R$");
+    }else{
+         System.out.println("o valor a ser pago é de 3500R$");
+    }
+    System.out.println("\n---------------------------------------\n");
+    }
+    
+    
+     }
+}
