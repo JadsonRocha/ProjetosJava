@@ -1,0 +1,29 @@
+
+package javaprimeiroprojeto;
+
+import javax.swing.JOptionPane;
+
+public class atividade16 {
+    public void atividade16(){
+        
+        String salario;
+        double S,R;
+        
+        salario=JOptionPane.showInputDialog("digite o salario do funcionario:  ");
+        S= Double.parseDouble(salario);
+        
+        if(S<=3636){
+            R= S+(S/100)*50;
+            JOptionPane.showMessageDialog(null,"o salario com reajuste ficou em: "+R);
+        }else if(S>3636 && S<=12120){
+            R= S+(S/100)*20;
+            JOptionPane.showMessageDialog(null,"o salario com reajuste ficou em: "+R);
+        }else if(S>12120){
+            R= S+(S/100)*15;
+            JOptionPane.showMessageDialog(null,"o salario com reajuste ficou em: "+R);
+        }
+        
+        
+        
+    }
+}
