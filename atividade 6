@@ -1,0 +1,36 @@
+
+package javaprimeiroprojeto;
+
+import java.util.Scanner;
+
+public class atividade10 {
+    public void atividade10 (){
+    Scanner imput = new Scanner(System.in);
+        
+    double n,emprestimo, parcelas,salario,porc,par;
+    
+    System.out.println("quantas pesquisas deseja fazer? ");
+    n=imput.nextDouble();
+    
+    for(int i=0;i<n;i++){
+    System.out.println("digite o valor do emprestimo: ");
+    emprestimo=imput.nextDouble();
+    System.out.println("digite o numero de parcelas: ");
+    parcelas=imput.nextDouble();
+    System.out.println("digite o valor do salario: ");
+    salario=imput.nextDouble();
+    
+    porc=(salario/100)*30;
+    par=emprestimo/parcelas;
+    
+    if(porc<par){
+        System.out.println("emprestimo negado!");
+    }else{
+        System.out.println(" emprestimo aprovado!\nvalor das parcelas ficou em: "+par+"R$");
+        
+    }
+    System.out.println("\n---------------------------------------\n");
+    }
+   
+    }
+}
