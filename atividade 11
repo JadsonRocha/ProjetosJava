@@ -1,0 +1,38 @@
+
+package javaprimeiroprojeto;
+
+
+import javax.swing.JOptionPane;
+
+public class atividade15 {
+    public void atividade15 (){
+    
+    String x1,y2,op;
+    double op1,x,y,r;
+    
+    x1=JOptionPane.showInputDialog("digite o primeiro numero:  ");
+    x= Double.parseDouble(x1);
+    y2=JOptionPane.showInputDialog("digite o segundo numero:  ");
+    y= Double.parseDouble(y2);
+    
+    op=JOptionPane.showInputDialog("quais dessas operações deseja usar 1=(+),2=(-),3=(/),4=(*):  ");
+    op1= Double.parseDouble(op);
+    if(op1==1){
+        r=x+y;
+        JOptionPane.showMessageDialog(null,"a soma dos numeros ficou em: "+r);
+    }else if(op1==2){
+        r=x-y;
+        JOptionPane.showMessageDialog(null,"a sub dos numeros ficou em: "+r);
+    }else if(op1==3){
+        r=x/y;
+        JOptionPane.showMessageDialog(null,"a div dos numeros ficou em: "+r);
+    }else if(op1==4){
+        r=x*y;
+        JOptionPane.showMessageDialog(null,"a multi dos numeros ficou em: "+r);
+    }
+    
+    
+    
+    
+    }
+}
