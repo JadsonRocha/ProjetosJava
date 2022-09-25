@@ -1,0 +1,32 @@
+
+package javaprimeiroprojeto;
+
+import java.util.Scanner;
+
+
+public class atividade12 {
+    public void atividade12 (){
+    Scanner imput = new Scanner(System.in);
+    
+    double n1,t,n,s;
+    System.out.println("quantas pesquisas deseja fazer? ");
+     n1=imput.nextDouble();
+    
+    for(int i=0;i<n1;i++){
+    System.out.println("digite quantos anos o funcionario trabalha na empresa: ");
+    t=imput.nextDouble();
+    System.out.println("digite o salariodo funcionario: ");
+    s=imput.nextDouble();
+    
+    if(t>=5){
+        n=s+(s/100)*20;
+        System.out.println("o novo salario do funcionario é: "+n+"R$");
+    }else {
+        n=s+(s/100)*10;
+        System.out.println("o novo salario do funcionario é: "+n+"R$");
+    }
+    System.out.println("\n---------------------------------------\n");
+    }
+    
+    }
+}
