@@ -1,0 +1,39 @@
+
+package javaprimeiroprojeto;
+
+import java.util.Scanner;
+
+
+public class atividade6 {
+    public void atividade6 (){
+    Scanner imput = new Scanner(System.in);
+        int n,q;
+        System.out.println("qual o numero do produto? ");
+        n=imput.nextInt();
+        System.out.println("qual a quantidade?");
+        q=imput.nextInt();
+        
+        if(n==1){
+            int valor=10*q;
+        }
+        else if(n==2){
+            int valor=12*q;
+        }
+            else if(n==3){
+                int valor=15*q;
+            }
+                else if(n==4){
+                    int valor=10*q;
+                }
+                    else if(n==5){
+                        int valor = 13*q;
+                    }
+                        else if(n==6){
+                           int valor=6*q;
+                           
+                        }
+         
+        System.out.println("o valor a ser pago é : "+valor+"R$");
+    
+    }
+}
