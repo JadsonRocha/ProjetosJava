@@ -1,0 +1,39 @@
+
+package javaprimeiroprojeto;
+
+import java.util.Scanner;
+import javax.swing.JOptionPane;
+
+
+public class atividade8 {
+    public void atividade8 (){
+        Scanner imput = new Scanner(System.in);
+        
+        String nome, n1,n2, n;
+        double nota1, nota2, media, nn;
+        
+        
+        n=JOptionPane.showInputDialog("quantos alunos voce quer saber a nota? ");
+        nn= Double.parseDouble(n);
+        
+        
+        for(int i=0; i<nn;i++){
+        nome = JOptionPane.showInputDialog("digite o nome do aluno: ");
+        
+        n1=JOptionPane.showInputDialog("digite a primeira nota: ");
+        n2=JOptionPane.showInputDialog("digite a segunda nota; ");
+        
+        nota1= Double.parseDouble(n1);
+        nota2= Double.parseDouble(n2);
+        
+        media=(nota1+nota2)/2;
+        if(media>7){
+            JOptionPane.showMessageDialog(null,"Aluno : " + nome +"\n"+ "A media do aluno é : "+media+"\n"+"Aluno aprovado.","Media final",JOptionPane.INFORMATION_MESSAGE);
+        }else{
+            JOptionPane.showMessageDialog(null,"Aluno : " + nome +"\n"+ "A media do aluno é : "+media+"\n"+"Reprovado.","Media final",JOptionPane.WARNING_MESSAGE);
+        }
+    }
+        
+        
+    }
+}
