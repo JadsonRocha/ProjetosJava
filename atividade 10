@@ -1,0 +1,36 @@
+
+package javaprimeiroprojeto;
+
+import java.util.Scanner;
+import javax.swing.JOptionPane;
+
+public class atividade14 {
+    public void atividade14 (){
+        Scanner imput = new Scanner(System.in);
+        String horasTrab, salarioHora, numeroDep;   
+        double  salarioLiq,IR=0,salarioBruto,INSS=0, HT, SH,ND;
+        horasTrab=JOptionPane.showInputDialog("quantidade de horas trabalhadas:  ");
+        HT= Double.parseDouble(horasTrab);
+        salarioHora=JOptionPane.showInputDialog("salario por hora:  ");
+        SH= Double.parseDouble(salarioHora);
+        numeroDep=JOptionPane.showInputDialog("numero de dependentes ");
+        ND= Double.parseDouble(numeroDep);   
+        salarioBruto=HT*SH+(50*ND);   
+        JOptionPane.showMessageDialog(null,"salario bruto ficou em: "+ salarioBruto+"R$");   
+        if(salarioBruto<=1000){
+            INSS=salarioBruto*8.5/100;
+        }else if(salarioBruto>1000){
+            INSS= salarioBruto*9/100;
+        }
+        if(salarioBruto<=500){
+            IR=0;
+        }else if(salarioBruto>500 && salarioBruto<=1000){
+            IR=salarioBruto*5/100;
+        }else if(salarioBruto>1000){
+            IR=salarioBruto*7/100;
+        }
+        salarioLiq= salarioBruto-INSS-IR;   
+        JOptionPane.showMessageDialog(null,"salario liquido ficou em: "+ salarioLiq+"R$");
+
+    }
+}
