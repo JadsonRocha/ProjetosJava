@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+
+public class atividade5 {
+    public void atividade5 (){
+    Scanner imput = new Scanner(System.in);
+    
+        System.out.println("qual o tempo em segundos? ");
+        int seg=imput.nextInt();
+        int resto,hora,min,seg2;
+        hora=seg/3600;
+        resto= seg % 3600;
+        min=resto/60;
+        seg2=resto %60;
+        
+        System.out.println("a duracao foi de "+hora+":"+min+":"+seg2);
+        
+                
+    
+    
+    }
+}
