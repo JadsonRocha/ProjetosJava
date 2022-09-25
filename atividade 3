@@ -1,0 +1,49 @@
+
+package javaprimeiroprojeto;
+
+import java.util.Scanner;
+import javax.swing.JOptionPane;
+
+
+public class atividade7 {
+    public void atividade7 (){
+        Scanner imput = new Scanner(System.in);
+        
+            String nome, n1, n2, notaexame;
+            double nota1, nota2,notaex, media, mediafinal;
+
+            nome = JOptionPane.showInputDialog("Digite o nome do aluno (a) ");
+
+            n1 = JOptionPane.showInputDialog("Digite a primeira nota: ");
+            n2= JOptionPane.showInputDialog("Digite a Segunda nota: ");
+
+            nota1 = Double.parseDouble(n1);
+            nota2 = Double.parseDouble(n2);
+
+            media = (nota1+nota2)/2;
+
+            if (media>=7){
+                   JOptionPane.showMessageDialog(null,"Aluno : " + nome +"\n"+ " A media do aluno é: "+media+"\n"+"Aluno aprovado.","Situação do Aluno",JOptionPane.INFORMATION_MESSAGE);
+            }else {
+                   JOptionPane.showMessageDialog(null,"Aluno : " + nome +"\n"+ " A media do aluno é: "+media+"\n"+"Deverá fazer Exame Final."+"\n"+"Pressione ok para digitar a nota do exame","Situação do Aluno",JOptionPane.WARNING_MESSAGE);
+                   notaexame = JOptionPane.showInputDialog("Digite a nota do Exame final");
+                   notaex = Double.parseDouble(notaexame);
+
+
+                   mediafinal = (notaex+media)/2;
+
+                   if (mediafinal>=5){
+                           JOptionPane.showMessageDialog(null,"Aluno : " + nome + "\n"+"A média do aluno(a)"+mediafinal+"\n"+"Aprovado", "Situação do Aluno", 
+                          JOptionPane.INFORMATION_MESSAGE);
+                   }else{
+                           JOptionPane.showMessageDialog(null,"Aluno : " + nome +"\n"+ " A media do aluno é: "+mediafinal+"\n"+"Reprovado.","Situação do Aluno",JOptionPane.WARNING_MESSAGE);
+
+                       }
+
+            }
+            System.exit(0);
+ 
+    }
+ 
+    
+}
