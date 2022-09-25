@@ -1,0 +1,30 @@
+
+package javaprimeiroprojeto;
+
+import java.util.Scanner;
+import javax.swing.JOptionPane;
+
+public class atividade9 {
+    public void atividade9 (){
+        Scanner imput = new Scanner(System.in);
+        
+        String n,altura, sexo;
+        double nn,alt,menor;
+        
+        n=JOptionPane.showInputDialog("quantas pessoas quer saber o peso? ");
+        nn= Double.parseDouble(n);
+        
+        for(int i=1;i<=nn;i++){
+            altura=JOptionPane.showInputDialog("digite a altura da pessoa "+i+": ");
+            sexo=JOptionPane.showInputDialog("qual o sexo da pessoa? ");
+            
+            alt= Double.parseDouble(altura);
+           
+          
+        }
+        
+       
+        
+        
+    }
+}
