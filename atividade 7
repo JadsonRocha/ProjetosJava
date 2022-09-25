@@ -1,0 +1,33 @@
+
+package javaprimeiroprojeto;
+
+import java.util.Scanner;
+
+
+public class atividade11 {
+    public void atividade11 (){
+    Scanner imput = new Scanner(System.in);
+     
+    double n1,n,novosalario;
+    
+    System.out.println("quantas pesquisas deseja fazer? ");
+     n1=imput.nextDouble();
+    
+    for(int i=0;i<n1;i++){
+    
+    System.out.println("qual o total de vendas no mes de abril? ");
+    n=imput.nextDouble();
+    if(n<=2000){
+        System.out.println("o salario continua sendo o mesmo de 1200R$.");
+    }else{
+        novosalario=1200+(n/100)*10;
+        System.out.println("o novo salario do funcionario é: "+novosalario);
+        
+    }
+    System.out.println("\n---------------------------------------\n");
+    }
+    
+    
+    
+    }
+}
